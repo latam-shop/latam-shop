@@ -1,0 +1,11 @@
+.primary {
+    @apply bg-amber-700 text-white;
+}
+
+.secondary {
+    @apply bg-white text-black;
+}
+
+.default {
+    @apply bg-black text-white;
+}

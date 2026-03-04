@@ -1,0 +1,9 @@
+@reference "tailwindcss";
+
+.container {
+    @apply bg-white p-6 rounded-lg shadow-md flex flex-col items-center justify-center gap-6 text-center;
+}
+
+.buttonContainer {
+    @apply text-white bg-amber-600 hover:bg-amber-600/60 p-2 rounded-lg disabled:bg-zinc-500 disabled:cursor-not-allowed;
+}
