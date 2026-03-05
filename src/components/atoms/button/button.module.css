@@ -1,11 +1,11 @@
 .primary {
-    @apply bg-amber-700 text-white;
+    @apply rounded-full;
 }
 
 .secondary {
-    @apply bg-white text-black;
+    @apply rounded-lg;
 }
 
 .default {
-    @apply bg-black text-white;
+    @apply rounded-md;
 }

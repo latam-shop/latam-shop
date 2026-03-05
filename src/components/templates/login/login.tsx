@@ -9,7 +9,7 @@ export default function LoginTemplate() {
         title="Aceptar"
         className={classes.buttonContainer}
         variant='primary'
-        disabled={true}
+        disabled={false}
       />
     </div>
   )
