@@ -9,7 +9,8 @@
     "lint": "eslint",
     "test": "jest",
     "test:watch": "jest --watch",
-    "prepare": "husky"
+    "prepare": "husky",
+    "preinstall": "npx only-allow pnpm"
   },
   "dependencies": {
     "next": "16.1.6",
@@ -37,5 +38,9 @@
     "tailwindcss": "^4",
     "ts-node": "^10.9.2",
     "typescript": "^5"
+  },
+  "engines": {
+    "npm": "Please use pnpm instead of npm",
+    "yarn": "Please use pnpm instead of yarn"
   }
 }
