@@ -12,5 +12,6 @@ export const Button = ({
         disabled={disabled}
         onClick={onClick}
     >  {title}
+    
     </button>)
 }
