@@ -1,6 +1,6 @@
 import { ButtonProps } from "./button.types"
 
-export const Buttom = ({
+export const Button = ({
     title,
     onClick,
     className,

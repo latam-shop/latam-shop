@@ -1,11 +1,11 @@
-import { Buttom } from '@/components/atoms/button/button'
+import { Button } from '@/components/atoms/button/button'
 import classes from './login.module.css'
 
 export default function LoginTemplate() {
   return (
     <div className={classes.container}>
       page Login
-      <Buttom
+      <Button
         title="Aceptar"
         className={classes.buttonContainer}
         variant='primary'
