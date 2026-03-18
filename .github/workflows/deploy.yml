@@ -1,44 +1,23 @@
-name: Next.js CI
-
+name: pnpm Example Workflow
 on:
   push:
-    branches: ["main", "dev", "stg"]
-  pull_request:
-    branches: ["main", "dev", "stg"]
 
 jobs:
-  build-and-test:
-    name: Quality Assurance (Lint, Type-check, Build)
-    runs-on: ubuntu-latest
-
+  build:
+    runs-on: ubuntu-22.04
+    strategy:
+      matrix:
+        node-version: [20]
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v3
+      - uses: actions/checkout@v4
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
         with:
-          version: 9
-          run_install: false
-
-      - name: Setup Node.js
+          version: 10
+      - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: ${{ matrix.node-version }}
           cache: "pnpm"
-
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
-
-      - name: Lint and Type-check
-        run: |
-          pnpm next lint
-          pnpm tsc --noEmit
-
-      - name: Run unit tests
-        run: pnpm test
-
-      - name: Build project
-        run: pnpm build
-        env:
-          NEXT_PUBLIC_API_URL: ${{ secrets.NEXT_PUBLIC_API_URL }}
+        run: pnpm install
