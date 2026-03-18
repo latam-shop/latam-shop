@@ -15,7 +15,7 @@ describe('Button', () => {
   it("should render with both custom className and variant class", () => {
     render(
       <Button
-        title="DiegoHoyosCo"
+        title="DiegoHoyosCol"
         className="my-custom-button"
         variant="primary"
       />
