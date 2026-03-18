@@ -1,19 +1,17 @@
 import { ButtonProps } from "./button.types";
 
-export const Buttom = ({
-  title,
-  onClick,
-  className,
-  variant,
-  disabled = false,
+export const Button = ({
+    title,
+    onClick,
+    className,
+    variant = "default",
+    disabled = false,
 }: ButtonProps) => {
-  return (
-    <button
-      className={`${className} ${variant ? variant : ""}`}
-      disabled={disabled}
-      onClick={onClick}
-    >
-      {title}
-    </button>
-  );
-};
+    return (<button
+        className={`${className} ${variant}`}
+        disabled={disabled}
+        onClick={onClick}
+    >  {title}
+
+    </button>)
+}
