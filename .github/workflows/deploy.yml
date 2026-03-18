@@ -1,6 +1,9 @@
 name: pnpm Example Workflow
 on:
   push:
+    branches: [ "main", "dev", "stg" ]
+  pull_request:
+    branches: [ "main", "dev", "stg" ]
 
 jobs:
   build:
