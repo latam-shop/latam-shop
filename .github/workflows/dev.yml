@@ -1,18 +1,15 @@
 name: LATAMSHOP CI/CD - Dev
 
 on:
-  # 1. Corre cuando se abre o actualiza un PR hacia 'dev'
   pull_request:
     branches: ["dev"]
 
-  # 2. Corre cuando el código finalmente entra a 'dev' (vía Merge)
   push:
     branches: ["dev"]
 
 jobs:
   validation:
     runs-on: ubuntu-latest
-    # Usamos una imagen ligera de Alpine para optimizar recursos
     container:
       image: node:20-alpine
 
