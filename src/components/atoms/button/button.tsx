@@ -1,3 +1,5 @@
+
+
 import { ButtonProps } from "./button.types";
 
 export const Button = ({
@@ -15,3 +17,4 @@ export const Button = ({
 
     </button>)
 }
+
