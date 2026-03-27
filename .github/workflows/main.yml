@@ -1,0 +1,36 @@
+name: LATAMSHOP CI/CD - Production
+
+on:
+  pull_request:
+    branches: ["main"]
+  push:
+    branches: ["main"]
+
+jobs:
+  prod-release:
+    runs-on: ubuntu-latest
+    container:
+      image: node:20-alpine
+    environment: production
+
+    steps:
+      - name: Install Git
+        run: apk add --no-cache git
+
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install pnpm
+        run: npm install -g pnpm@10
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Lint and Type-check
+        run: pnpm lint
+
+      - name: Run unit tests
+        run: pnpm test
+
+      - name: Final Production Build
+        run: pnpm build
