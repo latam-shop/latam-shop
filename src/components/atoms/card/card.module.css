@@ -1,5 +1,5 @@
-@import "tailwindcss";
+@reference "tailwindcss";
 
 .mainContainer {
-    @apply transition-all;
+    @apply flex flex-col items-center justify-center;
 }
