@@ -10,7 +10,7 @@ jobs:
   prod-release:
     runs-on: ubuntu-latest
     container:
-      image: node:20-alpine
+      image: node:22-alpine
     environment: production
 
     steps:
