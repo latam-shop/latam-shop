@@ -1,7 +1,8 @@
 import { PropsWithChildren } from "react";
 import { CardProps } from "./card.types";
-import classes from './card.module.css';
 import { SIZE_MAP } from "./card.util";
+import { cn } from "@/lib/utils";
+import styles from './card.module.css'
 
 export const Card = ({
     children,
@@ -11,11 +12,7 @@ export const Card = ({
     const dimensions = SIZE_MAP[size];
 
     return (
-        <div className={`
-            ${classes.mainContainer}
-            ${dimensions}
-            ${classContainer}
-        `}>
+        <div className={cn(styles.mainContainer, classContainer, dimensions)}>
             {children}
         </div>
     );
