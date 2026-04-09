@@ -1,17 +1,17 @@
-@import "tailwindcss";
+@reference "tailwindcss";
 
 .primary {
-    @apply text-white bg-amber-600 hover:bg-amber-600/60 p-2 rounded-lg disabled:bg-zinc-500 disabled:cursor-not-allowed;
+  @apply text-white bg-amber-600 hover:bg-amber-600/60 p-2 rounded-lg disabled:bg-zinc-500 disabled:cursor-not-allowed;
 }
 
 .secondary {
-    @apply text-white bg-red-500 hover:bg-red-500/60 p-2 rounded-lg disabled:bg-zinc-500 disabled:cursor-not-allowed;
+  @apply text-white bg-red-500 hover:bg-red-500/60 p-2 rounded-lg disabled:bg-zinc-500 disabled:cursor-not-allowed;
 }
 
 .default {
-    @apply text-white bg-green-500 hover:bg-green-500/60 p-2 rounded-lg disabled:bg-zinc-500 disabled:cursor-not-allowed;
+  @apply text-white bg-green-500 hover:bg-green-500/60 p-2 rounded-lg disabled:bg-zinc-500 disabled:cursor-not-allowed;
 }
 
 .disabled {
-    @apply text-white bg-gray-500/50 p-2 rounded-lg disabled:bg-zinc-500 disabled:cursor-not-allowed;
+  @apply text-white bg-gray-500/50 p-2 rounded-lg disabled:bg-zinc-500 disabled:cursor-not-allowed;
 }
