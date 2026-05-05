@@ -5,7 +5,7 @@ import Card from '@/components/atoms/card/card'
 export default function LoginTemplate() {
   return (
     <div className={classes.container}>
-      page Login
+      page Login actualizada
 
       <Card classContainer='w-xl h-xl'>
         <Button
@@ -14,7 +14,7 @@ export default function LoginTemplate() {
           variant='primary'
           disabled={false}
         />
-        <div>hola</div>
+        <div>holaaaaa Gracias Diegooo </div>
       </Card>
     </div>
   )
