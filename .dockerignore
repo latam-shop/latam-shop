@@ -1,0 +1,8 @@
+node_modules
+.next
+.git
+out
+build
+Dockerfile
+docker-compose.yml
+.env.local

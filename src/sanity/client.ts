@@ -8,7 +8,7 @@ if (!projectId) {
 
 export const SANITY_CONFIG = {
   projectId: projectId.trim(),
-  dataset: process.env.NEXT_PUBLIC_SANITY_DATASET,
+  dataset: process.env.NEXT_PUBLIC_SANITY_DATASET || "production",
   apiVersion: process.env.NEXT_PUBLIC_SANITY_API_VERSION,
   useCdn: process.env.NEXT_PUBLIC_SANITY_USE_CDN === "true",
 };
