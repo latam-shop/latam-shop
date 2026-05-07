@@ -14,3 +14,7 @@ pnpm dev
 ```
 
 Third, open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+
+to use tailwindcss use ```bash @reference "tailwindcss" ``` in your css file
+

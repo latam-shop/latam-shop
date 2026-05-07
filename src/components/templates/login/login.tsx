@@ -1,23 +1,22 @@
 import { Button } from '@/components/atoms/button/button'
 
 import classes from './login.module.css'
-import Icon from '@/components/atoms/Icons/icon';
-
+import Card from '@/components/atoms/card/card'
 
 export default function LoginTemplate() {
   return (
-    <div className="flex gap-6">
-      <div className={classes.container}>
-        <Icon name="rating" size="2xl" color="text-amber-400" />
-        page Login
+    <div className={classes.container}>
+      page Login actualizada
+
+      <Card classContainer='w-xl h-xl'>
         <Button
-          title="Aceptar 1"
+          title="Aceptar"
           className={classes.buttonContainer}
           variant='primary'
           disabled={false}
         />
-      </div>
-
+        <div>holaaaaa Gracias Diegooo </div>
+      </Card>
     </div>
 
   )
