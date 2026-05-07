@@ -15,7 +15,7 @@ services:
     environment:
       - WATCHPACK_POLLING=true
       - CHOKIDAR_USEPOLLING=true
-    command: pnpm run dev
+    command: npm run dev
     develop:
       watch:
         - action: sync
@@ -40,7 +40,7 @@ services:
       - /app/node_modules
     environment:
       - WATCHPACK_POLLING=true
-    command: npx storybook dev -p 6006 --ci --host 0.0.0.0
+    command: pnpm run storybook
     develop:
       watch:
         - action: sync
