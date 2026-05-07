@@ -21,6 +21,7 @@ const Icon = ({
             icon={selectedIcon}
             className={`${color} shrink-0 block`}
             aria-hidden="true"
+            data-testid={name}
         />
     );
 };
