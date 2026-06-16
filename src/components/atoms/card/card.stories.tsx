@@ -59,6 +59,7 @@ export const CardSizeXl: Story = {
 export const CardWithCoffee: Story = {
     args: {
         children: (
+            // eslint-disable-next-line @next/next/no-img-element
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhp0SVVLmVabbGdCvNbJ2abDvaZdI93FvRMA&s" alt="" />
         ),
         size: 'sm'
