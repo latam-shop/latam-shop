@@ -1,4 +1,3 @@
-import { Card } from "@/components/atoms/card";
 import BannerScrollable from "@/components/templates/banner-scrollable";
 
 export default function LoginTemplate() {

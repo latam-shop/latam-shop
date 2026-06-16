@@ -13,9 +13,9 @@ describe('Icon', () => {
     });
 
     it('should return null if the icon name does not exist', () => {
-        // @ts-ignore: testing invalid name
+        // @ts-expect-error: testing invalid name
         const { container } = render(<Icon name="non-existent" />);
-        
+
         expect(container.firstChild).toBeNull();
     });
 });
