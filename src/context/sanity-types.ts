@@ -1,4 +1,4 @@
-import { ResolvedModule } from "@/components/organisms/sanity/registry";
+import { ResolvedModule } from "@/components/sanity/registry";
 
 export interface SanityPageContextProps {
     modules: ResolvedModule[];
