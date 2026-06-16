@@ -1,21 +1,19 @@
-import { Button } from '@/components/atoms/button/button'
-import classes from './login.module.css'
-import Card from '@/components/atoms/card/card'
+import BannerScrollable from "@/components/templates/banner-scrollable";
 
 export default function LoginTemplate() {
   return (
-    <div className={classes.container}>
-      page Login actualizada
-
-      <Card classContainer='w-xl h-xl'>
-        <Button
-          title="Aceptar"
-          className={classes.buttonContainer}
-          variant='primary'
-          disabled={false}
-        />
-        <div>holaaaaa Gracias Diegooo </div>
-      </Card>
+    <div className='flex flex-col w-full'>
+      <BannerScrollable title={'Featured Categories'}  >
+        <div>
+          Diegooooo
+        </div>
+        <div>
+          Carlaaaa
+        </div>
+        <div>
+          Krakeeeeen
+        </div>
+      </BannerScrollable>
     </div>
   )
 }

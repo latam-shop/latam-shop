@@ -1,9 +1,9 @@
 import { client } from "@/sanity/client";
-import { GLOBAL_PAGE_QUERY } from "@/components/organisms/sanity";
+import { GLOBAL_PAGE_QUERY } from "@/components/sanity";
 import { SanityPageProvider } from "@/context/sanity-page-context";
-import { resolveAllModules } from "@/components/organisms/sanity/resolver";
-import { SanityModuleData } from "@/components/organisms/sanity/types";
-import { CmpPage } from "@/components/organisms/sanity/cmp-page";
+import { resolveAllModules } from "@/components/sanity/resolver";
+import { SanityModuleData } from "@/components/sanity/types";
+import { CmpPage } from "@/components/sanity/cmp-page";
 
 export default async function IndexPage() {
     const rawModules = await client.fetch<SanityModuleData[]>(GLOBAL_PAGE_QUERY);

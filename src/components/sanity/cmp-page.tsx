@@ -1,7 +1,7 @@
 "use client";
 
 import { useSanityPageData } from "@/context/sanity-page-context";
-import { SanityModuleResolver } from "@/components/organisms/sanity/resolver";
+import { SanityModuleResolver } from "@/components/sanity/resolver";
 
 export const CmpPage = () => {
     const { modules } = useSanityPageData();
